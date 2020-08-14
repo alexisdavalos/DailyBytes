@@ -6,7 +6,21 @@
 // <CountComponentn hello={"world"} />
 // { x: 'foo', y: 'bar', hello: 'world' }
 
-const withExtraProps = (WrappedComponent) => (props) => {
-	const extraProps = { x: 'foo', y: 'bar' }
-	return <WrappedComponent {...props} {...extraProps} />
+//const withExtraProps = (WrappedComponent) => (props) => {
+//	const extraProps = { x: 'foo', y: 'bar' }
+//	return <WrappedComponent {...props} {...extraProps} />
+//}
+
+// Pure JS example
+
+const myObj = {
+	foo: 'bar',
+	bar: 'foo'
 }
+
+const HOF = (myObject) => (props) => {
+	const extraKeys = {x: 'y', y:'x'};
+	return myObject = {...myObject, extraKeys, props};
+}
+
+console.log(HOF(myObj)({a:'b'})) 
