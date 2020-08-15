@@ -42,4 +42,5 @@ Tree.addChild(5)
 Tree.children[1].addChild(7)
 for i in range(2,10):
     Tree.addChild(i)
+
 print(Tree.breadthFirstSearch())

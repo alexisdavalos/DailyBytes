@@ -23,4 +23,8 @@ const HOF = (myObject) => (props) => {
 	return myObject = {...myObject, extraKeys, props};
 }
 
-console.log(HOF(myObj)({a:'b'})) 
+const hello = (name) =>{
+	return `hello ${name}`;
+}
+
+console.log(HOF(myObj)(hello('alexis'))) 
