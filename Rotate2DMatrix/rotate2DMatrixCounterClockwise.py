@@ -1,3 +1,9 @@
+# Do not return anything, modify matrix in-place instead.
+# You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (counter-clockwise).
+
+# You have to rotate the image in-place, which means you have to modify the input 2D matrix directly.
+# DO NOT allocate another 2D matrix and do the rotation
+
 def rotateCounterClockwise(matrix):
 
     # transpose: swap columns for rows
