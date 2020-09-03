@@ -3,7 +3,7 @@
 * Some problems only have python solutions and some only have javascript solutions
 * Feel free to make a pull request if you have better/different solutions
 
-# Current List of Problems
+# Current List of Coding Challenges:
 
 * [After](After)
 * [BST_Traversal](BST_Traversal)
