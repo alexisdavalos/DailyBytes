@@ -1,5 +1,5 @@
 # runtime O(n) | spacetime O(n)
-# this solution using memoization 
+# this solution using memoization
 # to optimize # of recursive calls added to stack
 
 def getNthFib(n):
@@ -17,6 +17,7 @@ def getNthFib(n):
         cache[n] = getNthFib(n-1) + getNthFib(n-2)
     # Return the nth number from cache
     return cache[n]
+
 
 # Driver Code
 print(getNthFib(15))

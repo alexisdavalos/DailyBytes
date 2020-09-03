@@ -1,3 +1,6 @@
+# Add three methods to the BST class that take in a a BST and an empty array. Traverse the BST, add its nodes' values to the input array, and return that array. The three functions should treverse the BST using the in-order, pre-order, and post-order tree traversal technicques.
+
+# O(n) time | O(n)/O(d)
 class BST:
     def __init__(self, value):
         self.value = value
