@@ -1,5 +1,5 @@
 # Coding Challenges (Python and JS)
-* This is a collection of coding challenges I've solved/come across w/ comment and complexity analysis
+* This is a collection of coding challenges I've come across w/ comments and complexity analysis
 * Some problems only have python solutions and some only have javascript solutions
 * Feel free to make a pull request if you have better/different solutions
 
