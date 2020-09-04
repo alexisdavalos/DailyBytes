@@ -6,6 +6,7 @@
 # Current List of Coding Challenges:
 
 * [After](After)
+* [Balanced Brackets](BalancedBrackets)
 * [BST_Traversal](BST_Traversal)
 * [BinarySearch](BinarySearch)
 * [BreadthFirstSearch](BreadthFirstSearch)
