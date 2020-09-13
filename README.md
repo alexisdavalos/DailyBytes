@@ -32,6 +32,7 @@
 * [RollCall](RollCall)
 * [Rotate2DMatrix](Rotate2DMatrix)
 * [RunOnce](RunOnce)
+* [SelectionSort](SelectionSort)
 * [SpaceXAPI](SpaceXAPI)
 * [ThreeNumberSum](ThreeNumberSum)
 * [TwoNumberSum](TwoNumberSum)
