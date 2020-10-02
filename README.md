@@ -40,6 +40,7 @@
 - [Rotate2DMatrix](Rotate2DMatrix)
 - [RunOnce](RunOnce)
 - [SelectionSort](SelectionSort)
+- [SingleCycleCheck](SingleCycleCheck)
 - [SpaceXAPI](SpaceXAPI)
 - [ThreeNumberSum](ThreeNumberSum)
 - [TwoNumberSum](TwoNumberSum)
