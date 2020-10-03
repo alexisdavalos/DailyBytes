@@ -2,6 +2,7 @@
 
 // Each BinaryTree node has an integer value, a left child node, and a right child node. Children nodes can either be BinaryTree nodes themselves or None / null.
 
+// O(n) time | O(n) space
 const invertBinaryTree = (tree) => {
   // Initialize a queue to store tree nodes
   let queue = [];
