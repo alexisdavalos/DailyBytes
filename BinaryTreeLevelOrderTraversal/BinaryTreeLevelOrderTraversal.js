@@ -1,11 +1,3 @@
-class Tree {
-  constructor(value) {
-    this.val = value;
-    this.left = null;
-    this.right = null;
-  }
-}
-
 //Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 const treeLevelOrderTraversal = (root) => {
@@ -37,6 +29,15 @@ const treeLevelOrderTraversal = (root) => {
 
   return path;
 };
+
+// This is the class of the input binary tree.
+class Tree {
+  constructor(value) {
+    this.val = value;
+    this.left = null;
+    this.right = null;
+  }
+}
 
 // Tree Construction
 const tree = new Tree(3);
