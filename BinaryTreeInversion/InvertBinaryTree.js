@@ -12,25 +12,18 @@ const invertBinaryTree = (tree) => {
   queue.push(tree);
   // Loop while queue has nodes
   while (queue.length > 0) {
-    // Track the size of the queue to define tree levels
-    let size = queue.length;
-
-    // Current size of iteration is a level in the tree
-    for (let i = 0; i < size; i++) {
-      // Grab node off the queue
-      let cur = queue.pop();
-      // Swap children nodes if node is not null
-      if (cur !== null) {
-        swapTreeNodes(cur);
-      } else {
-        // Node is null, continue to next node in queue
-        continue;
-      }
-
-      // Add swapped children to the queue
-      queue.unshift(cur.left);
-      queue.unshift(cur.right);
+    // Grab node off the queue
+    let cur = queue.pop();
+    // Swap children nodes if node is not null
+    if (cur !== null) {
+      swapTreeNodes(cur);
+    } else {
+      // Node is null, continue to next node in queue
+      continue;
     }
+    // Add swapped children to the queue
+    queue.unshift(cur.left);
+    queue.unshift(cur.right);
   }
 
   return tree;
