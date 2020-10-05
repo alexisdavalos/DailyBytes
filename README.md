@@ -3,6 +3,7 @@
 - This is a collection of coding challenges I've come across w/ comments and complexity analysis (not in all problems)
 - Some problems only have python solutions and some only have javascript solutions
 - Feel free to make a pull request if you have better/different solutions
+- The answers can be found in the [solutions](https://github.com/alexisdavalos/CodingChallenges/tree/solutions) branch
 
 # Current List of Coding Challenges:
 
@@ -10,6 +11,7 @@
 - [Balanced Brackets](BalancedBrackets)
 - [BST_Traversal](BST_Traversal)
 - [BinarySearch](BinarySearch)
+- [BinaryTreeInversion](BinaryTreeInversion)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
 - [BreadthFirstSearch](BreadthFirstSearch)
 - [BubbleSort](BubbleSort)
@@ -20,12 +22,14 @@
 - [CycleIterator](CycleIterator)
 - [Debounce](Debounce)
 - [DepthFirstSearch](DepthFirstSearch)
-- [DoublyLinkedList](DoublyLinkedList)
 - [Fibonacci](Fibonacci)
 - [FindFactorial](FindFactorial)
-- [HOC_HOF](HOC_HOF)
+- [HigherOrderFunction](HigherOrderFunction)
 - [InsertionSort](InsertionSort)
 - [JewelsStones](JewelsStones)
+- [LinkedListCycle](LinkedListCycles)
+- [LinkedListMerge](LinkedListMerge)
+- [LinkedListMiddleNode](LinkedListMiddleNode)
 - [Majority](Majority)
 - [MakeHistory](MakeHistory)
 - [MoveElementToEnd](MoveElementToEnd)
@@ -33,6 +37,8 @@
 - [NestedObjects](NestedObjects)
 - [NumIntersection](NumIntersection)
 - [Palindromes](Palindromes)
+- [RemoveLinkedListValues](RemoveLinkedListValues)
+- [ReverseLinkedList](ReverseLinkedList)
 - [ReverseString](ReverseString)
 - [ReverseSpecialString](ReverseSpecialString)
 - [RobotVaccum](RobotVaccum)
@@ -46,4 +52,3 @@
 - [TwoNumberSum](TwoNumberSum)
 - [UniqueChar](UniqueChar)
 - [ValidAnagram](ValidAnagram)
-- [ValidateSubsequence](ValidateSubsequence)
