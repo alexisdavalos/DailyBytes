@@ -1,35 +1,15 @@
-# Take in a string, any set of chars
-# Returns Boolean
-
-
-# addbb => true(abba)
-# asdf => false
-# asdfasdf => true (asdffdsa)
-# aaabb => true (baaab)
+# Write a function that takes in a string with any set of characters
+# Determine if that string can become a palindrome
+# Returns a Boolean after processing the input string
 
 def makePalindrome(string):
-    charCount = {}
+    # Your Code Here
+    return
 
-    for char in string:
-        if char in charCount:
-            charCount[char] +=1
-        else:
-            charCount[char] = 1
 
-    charValues = charCount.values()
-    odd = 0
-    even = 0
-
-    for value in charValues:
-        if value % 2 == 0:
-            even +=1
-        else:
-            odd +=1
-
-    return odd <= 1
-
-print(makePalindrome('addbb'))
-print(makePalindrome('alkdjsfdsa'))
-print(makePalindrome('asdfasdf'))
-print(makePalindrome('racecar'))
-
+# Test Cases Setup
+print(makePalindrome("aabb"))  # => true (abba)
+print(makePalindrome("asdf"))  # asdf => false
+print(makePalindrome("asdfasdf"))  # asdfasdf => true (asdffdsa)
+print(makePalindrome("aaabb"))  # aaabb => true (baaab)
+print(makePalindrome("racecar"))  # racecar => true

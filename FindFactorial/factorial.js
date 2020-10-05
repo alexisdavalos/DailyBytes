@@ -7,5 +7,11 @@ const factorial = (num) => {
 };
 
 // Test Cases
-const num = 5;
-console.log(`Factorial of ${num} is: ${factorial(num)}`);
+let num = 5;
+console.log(`Factorial of ${num} is: ${factorial(num)}`); // => 120
+
+num = 8;
+console.log(`Factorial of ${num} is: ${factorial(num)}`); // => 40320
+
+num = 21;
+console.log(`Factorial of ${num} is: ${factorial(num)}`); // => 51090942171709440000

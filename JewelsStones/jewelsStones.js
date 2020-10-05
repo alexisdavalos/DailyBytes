@@ -1,18 +1,7 @@
 //This question is asked by Amazon. Given a string representing your stones and another string representing a list of jewels, return the number of stones that you have that are also jewels.
 
 const jewelsStones = (jewels, stones) => {
-  // loop through stones and check if any jewels exist
-  // update count of jewels in stones
-
-  let stoneJewels = 0;
-
-  for (char of stones) {
-    if (jewels.includes(char)) {
-      stoneJewels += 1;
-    }
-  }
-
-  return stoneJewels;
+  // Your Code Here
 };
 
 // Ex: Given the following jewels and stones...

@@ -1,31 +1,16 @@
-//Implement a function "makeHistory" that returns a function (that will accept a string).
+// Implement a function "makeHistory" that returns a function (that will accept a string).
 
-//The returned function will save a history of strings passed into the returned function (one per invocation only).
+// The returned function will save a history of strings passed into the returned function (one per invocation only).
 
-//Every time a string is passed into the function, the function should return that same string with the word 'done' after it. However, if the string 'undo' is passed into the function, then the function should delete the last action saved in the history, and return that deleted string with the word 'undone' after.
+// Every time a string is passed into the function, the function should return that same string with the word 'done' after it. However, if the string 'undo' is passed into the function, then the function should delete the last action saved in the history, and return that deleted string with the word 'undone' after.
 
-//If 'undo' is passed into the function and the function's history is empty, then the function should return the string 'nothing to undo'.
+// If 'undo' is passed into the function and the function's history is empty, then the function should return the string 'nothing to undo'.
 
 const makeHistory = () => {
-  // history for tracking elements
-  let history = [];
-
-  return (str) => {
-    if (str !== "undo") {
-      // save str to history and return element + done string
-      history.push(str);
-      return `${history[history.length - 1]} - done`;
-    } else if (str === "undo" && history.length > 0) {
-      // returns last element in history + undone string
-      return `${history.pop()} - undone`;
-    } else if (str === "undo" && history.length === 0) {
-      // empty history, returns mssg
-      return "nothing to undo";
-    }
-  };
+  // Your Code Here
 };
 
-// testing setup
+// Test Cases Setup
 const myHistory = makeHistory();
 
 console.log(myHistory("exercise")); // exercise - done
