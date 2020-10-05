@@ -2,14 +2,10 @@
 // Example factorial of 4 is 4*3*2*1 = 24
 // Please use a recursive function to solve this.
 
-function factorial(num) {
-  if (num === 1) {
-    return 1;
-  } else {
-    num *= factorial(num - 1);
-    return num;
-  }
-}
+const factorial = (num) => {
+  // Your Code Here
+};
 
+// Test Cases
 const num = 5;
 console.log(`Factorial of ${num} is: ${factorial(num)}`);

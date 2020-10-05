@@ -10,17 +10,12 @@ class Node:
         self.children.append(Node(name))
         return self
 
-    def depthFirstSearch(self, array=[]):
-        # Add current node to array
-        array.append(self)
-        # Traverse throguh all the children recursively
-        for child in self.children:
-            child.depthFirstSearch(array)
-        return array
-
-# Driver Code
+    def depthFirstSearch(self, target):
+        # Your Code Here
+        return
 
 
+# Tree Construction
 Tree = Node(1)
 Tree.addChild(33)
 Tree.addChild(33)
@@ -30,4 +25,5 @@ Tree.children[0].addChild(55)
 for i in range(2, 10):
     Tree.addChild(i)
 
-print(Tree.depthFirstSearch())
+# The tree above should print out the following: 44
+print(Tree.depthFirstSearch(44))

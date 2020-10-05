@@ -2,42 +2,11 @@
 
 // Each BinaryTree node has an integer value, a left child node, and a right child node. Children nodes can either be BinaryTree nodes themselves or None / null.
 
-// O(n) time | O(n) space
 const invertBinaryTree = (tree) => {
-  // Initialize a queue to store tree nodes
-  let queue = [];
-  // Return null if input tree is null
-  if (tree === null) return null;
-
-  // Push root node into queue
-  queue.push(tree);
-  // Loop while queue has nodes
-  while (queue.length > 0) {
-    // Grab node off the queue
-    let cur = queue.pop();
-    // Swap children nodes if node is not null
-    if (cur !== null) {
-      swapTreeNodes(cur);
-    } else {
-      // Node is null, continue to next node in queue
-      continue;
-    }
-    // Add swapped children to the queue
-    queue.unshift(cur.left);
-    queue.unshift(cur.right);
-  }
-
-  return tree;
+  // Your Code Here
 };
 
-// Swaps left and right node children
-const swapTreeNodes = (node) => {
-  const left = node.left;
-  node.left = node.right;
-  node.right = left;
-};
-
-// This is the class of the input binary tree.
+// This is the class of the input binary tree. Do not Edit!
 class Tree {
   constructor(value) {
     this.val = value;
@@ -58,4 +27,4 @@ tree.right.left = new Tree(6);
 tree.right.right = new Tree(7);
 
 console.log("original:", tree);
-console.log("\ninverted:", invertBinaryTree(tree));
+console.log("\ninverted:", invertBinaryTree(tree)); // Each level should be swapped

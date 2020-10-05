@@ -1,87 +1,90 @@
 // Implement your own deep comparison function for objects.
 // Let’s limit objects to contain only numbers as properties.
 // Hint: use Object.keys() method - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
-//
-// As with the problem above, one level deep is OK; however, if you’re feeling adventurous try nested objects.
-//
 
 function compareTwoObjects(obj1, obj2) {
-  // Grab size of input objects for comparison
-  equalSize =
-    Object.keys(obj1).length === Object.keys(obj2).length ? true : false;
-
-  // If object lengths differ they are not equal
-  if (!equalSize) {
-    return false;
-  } else {
-    // Loop through keys and compare
-    for (const key in obj1) {
-      // If Key exists in obj2
-      if (obj2.hasOwnProperty(key)) {
-        // Check if Key values are equal on both object
-        if (obj1[key] === obj2[key]) {
-          // Values are equal, continue looping
-          continue;
-        } else {
-          // Key values are not equal break out of loop
-          return false;
-        }
-      } else {
-        // Key does not exist in obj2
-        return false;
-      }
-    }
-    // If loop finishes the objects are equal
-    return true;
-  }
+  // Your Code Here
 }
 
-// Test cases to verify
+// Test Cases to verify function
+
 // true
 const a = { a: 1, b: 2 };
 const b = { a: 1, b: 2 };
 
-console.log(compareTwoObjects(a, b));
+console.log(
+  "Objects Tests 1:",
+  compareTwoObjects(a, b),
+  "\n  Expected: " + true + "\n"
+);
 
 // true
 const c = { b: 2, a: 1 };
 const d = { a: 1, b: 2 };
 
-console.log(compareTwoObjects(c, d));
+console.log(
+  "Objects Tests 2:",
+  compareTwoObjects(c, d),
+  "\n  Expected: " + true + "\n"
+);
 
 // false
 const e = { b: 100, a: 2 };
 const f = { a: 1, b: 2 };
 
-console.log(compareTwoObjects(e, f));
+console.log(
+  "Objects Tests 3:",
+  compareTwoObjects(e, f),
+  "\n Expected: " + false + "\n"
+);
 
 // false
 const g = { a: 1, b: 2, c: 3 };
 const h = { a: 1, b: 2 };
 
-console.log(compareTwoObjects(g, h));
+console.log(
+  "Objects Tests 4:",
+  compareTwoObjects(g, h),
+  "\n Expected: " + false + "\n"
+);
 
 // false
 const i = { a: 1, b: 2 };
 const j = { a: 1, b: 2, c: 3 };
 
-console.log(compareTwoObjects(i, j));
+console.log(
+  "Objects Tests 5:",
+  compareTwoObjects(i, j),
+  "\n Expected: " + false + "\n"
+);
 
 // true
 const k = { a: undefined, b: 2 };
 const l = { a: undefined, b: 2 };
 
-console.log(compareTwoObjects(k, l));
+console.log(
+  "Objects Tests 6:",
+  compareTwoObjects(k, l),
+  "\n  Expected: " + true + "\n"
+);
 
 //false
 
 const m = { a: 1, b: 2 };
 const n = { a: undefined, b: 2 };
 
-console.log(compareTwoObjects(m, n));
+console.log(
+  "Objects Tests 7:",
+  compareTwoObjects(m, n),
+  "\n Expected: " + false + "\n"
+);
 
 // false
 const o = { a: undefined, b: 2 };
 const p = { z: 1, b: 2 };
 
-console.log(compareTwoObjects(o, p));
+console.log(
+  "Objects Tests 8:",
+  compareTwoObjects(o, p),
+  "\n Expected: " + false + "\n"
+);
