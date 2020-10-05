@@ -1,23 +1,14 @@
-# runtime O(n) | spacetime O(n)
-# this solution using memoization
-# to optimize # of recursive calls added to stack
+# Write a function that calculates the nth fibonnaci number recursively
+# This solution should be optimize # of recursive calls added to stack using memoization
+# Example Fibonnaci Sequence: 0,1,2,3,5,8,13,21...
 
 def getNthFib(n):
-    # Initialize storage for memoization
-    cache = {}
-    # fib sequence: 0,1,2,3,5,8,13,21...
-    # nth fib formula: nthFib = F(n-1) + F(n-2)
-    # check if n is first two fib numbers
-    if n == 1:
-        return 0
-    if n == 2:
-        return 1
-    # Store fib numbers in cache while recursing the nth number
-    elif n not in cache:
-        cache[n] = getNthFib(n-1) + getNthFib(n-2)
-    # Return the nth number from cache
-    return cache[n]
+    # Your Code Here
+    return
 
 
-# Driver Code
-print(getNthFib(15))
+# Test Cases
+print(getNthFib(15))  # Should print: 377
+print(getNthFib(25))  # Should print: 46368
+print(getNthFib(9))  # Should print: 21
+print(getNthFib(5))  # Should print: 3
