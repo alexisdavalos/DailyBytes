@@ -1,11 +1,17 @@
-// Node Class
+// This question is asked by Google. Given a linked list and a value, remove all nodes containing the provided value, and return the resulting list.
+
+const removeValue = (linkedlist, target) => {
+  // Your Code Here
+};
+
+// Node Class - Do Not Edit
 class Node {
   constructor(value = null, next = null) {
     this.value = value;
     this.next = next;
   }
 }
-// Linked List Class
+// Linked List Class - Do Not Edit
 class LinkedList {
   constructor(node = new Node("Head")) {
     this.head = node;
@@ -35,46 +41,6 @@ class LinkedList {
     console.log(string);
   }
 }
-
-// This question is asked by Google. Given a linked list and a value, remove all nodes containing the provided value, and return the resulting list.
-
-const removeValue = (linkedlist, target) => {
-  // Print initial list state
-  console.log("Removing All Nodes With Value:", target);
-  linkedlist.printList();
-
-  // Check if value is head
-  if (linkedlist.head.value === target) {
-    let newHead = linkedlist.head.next;
-    linkedlist.head = newHead;
-  }
-
-  // Set up initial pointers
-  let cur = linkedlist.head;
-  let prev = null;
-
-  while (cur !== null) {
-    // Reached target value
-    if (cur.value === target) {
-      // Grab the next node
-      let newNext = cur.next;
-      // Backtrack cur to prev
-      cur = prev;
-      // Skip over cur node
-      cur.next = newNext;
-    } else {
-      // Walk prev and cur forward
-      prev = cur;
-      cur = cur.next;
-    }
-  }
-
-  // Print List After Nodes Removed
-  console.log("After Removal:");
-  linkedlist.printList();
-
-  return linkedlist;
-};
 
 // Ex: Given the following linked lists and values...
 

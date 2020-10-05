@@ -3,19 +3,15 @@
 # to the end of the array and returns the array.
 
 # The function should perform this in place (mutate the array)
-# Maintaining the order of other integers is not required. 
+# Maintaining the order of other integers is not required.
 
-# O(n) time | O(1) space
+
 def moveElementToEnd(array, toMove):
-    # loop through array
-	for element in array:
-		# found a match
-		if element == toMove:
-			# remove the element
-			array.remove(element)
-			# add it to the end of the list
-			array.append(toMove)
-	
-	# return modified element
-	return array
+    # Your Code Here
+    return
 
+
+# Test Case Set Up
+array = [4, 7, 8, 22, 4, 5, 4, 9, 0, 6, 18]
+print(moveElementToEnd(array, 4))
+# Returns [7, 8, 22, 5, 9, 0, 6, 18, 4, 4, 4]

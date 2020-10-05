@@ -1,7 +1,6 @@
 // Write a function called ‘contains' that searches for a value in a nested object. It returns true if the object contains that value.
-// Example:
-//
-var spaceXLaunch = {
+// Example: SpaceXLaunch
+let spaceXLaunch = {
   launch: {
     rocket: {
       stage: {
@@ -14,20 +13,9 @@ var spaceXLaunch = {
   },
 };
 
-function contains(obj, value) {
-  for (const key in obj) {
-    // check if key value is an object type
-    if (typeof obj[key] === "object") {
-      // recurses and checks nested object
-      return contains(obj[key], value);
-    } else if (obj[key] === value) {
-      // Found a match return true
-      return true;
-    }
-  }
-  // Looped through all keys and found no matches
-  return false;
-}
+const contains = (obj, value) => {
+  // Your Code Here
+};
 
 console.log(contains(spaceXLaunch, "B1056")); //true
 console.log(contains(spaceXLaunch, "CRS-17")); //true

@@ -1,30 +1,11 @@
 // Given a string, reverse all of its characters and return the // resulting string.
 //
-// Ex: Given the following strings...
-//
-// “Cat”, return “taC”
-// “The Daily Byte”, return "etyB yliaD ehT”
-// “civic”, return “civic”
 
 const reverseString = (string) => {
-  // First Pass
-  //   newString = string.split("").reverse().join("");
-
-  // Second Pass
-  //   newString = [];
-  //   for (char of string) {
-  //     newString.unshift(char);
-  //   }
-  //   return newString.join("");
-
-  // Third Pass
-  newString = "";
-
-  for (char of string) {
-    newString = char + newString;
-  }
-
-  return newString;
+  // Your Code Here
 };
 
-console.log(reverseString("The Daily Byte"));
+// Ex: Given the following strings...
+console.log(reverseString("Cat")); // return “taC”
+console.log(reverseString("The Daily Byte")); // return "etyB yliaD ehT”
+console.log(reverseString("civic")); // return “civic”

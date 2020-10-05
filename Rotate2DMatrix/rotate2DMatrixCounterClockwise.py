@@ -5,17 +5,8 @@
 # DO NOT allocate another 2D matrix and do the rotation
 
 def rotateCounterClockwise(matrix):
-
-    # transpose: swap columns for rows
-    for i in range(len(matrix)):
-        j = i
-        while j < len(matrix):
-            # swap column and row values excluding the diagonals
-            matrix[j][i], matrix[i][j] = matrix[i][j], matrix[j][i]
-            j += 1
-
-    # reverse all rows in matrix
-    matrix.reverse()
+    # Your Code Here
+    return
 
 
 matrix = [

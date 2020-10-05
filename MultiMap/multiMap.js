@@ -3,20 +3,10 @@
 //See function definition and test cases for more clarification
 
 const multiMap = (inputArray, actionsArray) => {
-  // Checks input and action arr lengths
-  if (inputArray.length === actionsArray.length) {
-    // call every action with respective input
-    for (let i = 0; i < inputArray.length; i++) {
-      actionsArray[i](inputArray[i]);
-    }
-  } else {
-    // input error
-    return -1;
-  }
+  // Your Code Here
 };
 
-// testing setup
-
+// Test Case Setup
 const input = [2, 3, "desk"];
 const actions = [
   (elem) => console.log(elem * 2),

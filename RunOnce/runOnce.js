@@ -3,15 +3,11 @@
 // If you try to run it again it shouldn't print anything
 
 function runOnce() {
-  let firstRun = false;
-  return () => {
-    !firstRun ? console.log("First Run", Date.now()) : "";
-    // Ran the function, toggle boolean
-    firstRun = true;
-  };
+  // Your Code Here
 }
 
+// Test Case
 let myRunOnce = runOnce();
 
-myRunOnce();
+myRunOnce(); // Should only print on this call
 myRunOnce();

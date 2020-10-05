@@ -1,11 +1,17 @@
-// Node Class
+// Given a non-empty linked list as input, write a function that returns a reversed list.
+
+const reverseLinkedList = (linkedlist) => {
+  // Your Code Here
+};
+
+// Node Class - Do Not Edit
 class Node {
   constructor(value = null, next = null) {
     this.value = value;
     this.next = next;
   }
 }
-// Linked List Class
+// Linked List Class - Do Not Edit
 class LinkedList {
   constructor(node = new Node("Head")) {
     this.head = node;
@@ -35,28 +41,6 @@ class LinkedList {
     return string;
   }
 }
-
-// Given a non-empty linked list as input, write a function that returns a reversed list.
-
-const reverseLinkedList = (linkedlist) => {
-  // Initialize variables
-  let cur = linkedlist.head;
-  let prev = null;
-
-  // Update the tail to be the first node
-  linkedlist.tail = cur;
-
-  // Traverse the linked list
-  while (cur !== null) {
-    // Reverse the pointers as we walk the list
-    let next = cur.next;
-    cur.next = prev;
-    prev = cur;
-    cur = next;
-  }
-  // Update the head to be the last node
-  linkedlist.head = prev;
-};
 
 // Test Cases:
 // 1->2->3->null, return 3->2->1->null

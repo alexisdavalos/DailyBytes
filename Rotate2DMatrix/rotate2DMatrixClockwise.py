@@ -5,23 +5,11 @@
 # DO NOT allocate another 2D matrix and do the rotation
 
 def rotateClockwise(matrix):
-    # transpose: swap columns for rows
-    for i in range(len(matrix)):
-        j = i
-        while j < len(matrix):
-            # swap column and row values excluding the diagonals
-            matrix[j][i], matrix[i][j] = matrix[i][j], matrix[j][i]
-            j += 1
-
-    # loop through content of matrix
-    for i in range(len(matrix)):
-        # reverse content of every row
-        reversed_row = matrix[i][::-1]
-        matrix[i] = reversed_row
-
-# Driver Code
+    # Your Code Here
+    return
 
 
+# Test Case Setup
 matrix = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],

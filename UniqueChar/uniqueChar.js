@@ -1,26 +1,7 @@
 //This question is asked by Microsoft. Given a string, return the index of its //first unique character. If a unique character does not exist, return -1.
 
 const firstUniqueChar = (string) => {
-  let charCount = {};
-
-  // Count all characters
-  for (char of string) {
-    if (!charCount[char]) {
-      charCount[char] = 1;
-    } else if (charCount[char]) {
-      charCount[char] += 1;
-    }
-  }
-
-  // Loop through string in original order
-  for (char of string) {
-    if (char in charCount && charCount[char] < 2) {
-      // found first unique char
-      return string.indexOf(char);
-    }
-  }
-  // Unique character does not exist
-  return -1;
+  // Your Code Here
 };
 
 // Ex: Given the following strings...

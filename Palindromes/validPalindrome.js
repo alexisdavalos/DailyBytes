@@ -2,23 +2,11 @@
 
 // Note: a palindrome is a sequence of characters that reads the same forwards and backwards.
 
-// Ex: Given the following strings...
-
-// "abcba", return true
-// "foobof", return true (remove the first 'o', the second 'o', or 'b')
-// "abccab", return false
-
-// Thanks,
-// The Daily Byte
-
 const validPalindrome = (string, char = null) => {
-  if (char !== null) {
-    string = string.replace(char, "");
-  }
-
-  let reversedString = string.split("").reverse().join("");
-  return string === reversedString;
+  // Your Code Here
 };
+
+// Ex: Given the following strings..
 
 // "abcba", return true
 // "foobof", return true (remove the first 'o', the second 'o', or 'b')

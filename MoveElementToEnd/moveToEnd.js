@@ -5,29 +5,10 @@
 // The function should perform this in place (mutate the array)
 // Maintaining the order of other integers is not required.
 
-// O(n) time | O(1) space
 const moveElementToEnd = (array, toMove) => {
-  let elemCount = 0;
-  // loop through array
-  for (let i = 0; i < array.length; i++) {
-    // encountered a match
-    if (array[i] === toMove) {
-      // set match to null
-      array[i] = null;
-      // increase element count
-      elemCount += 1;
-    }
-  }
-  // push elements to end based on element count
-  for (let i = 0; i < elemCount; i++) {
-    array.push(toMove);
-  }
-  // filter null values out
-  array = array.filter((element) => element != null);
-
-  // return modified arr
-  return array;
+  // Your Code Here
 };
 
-// Do not edit the line below.
-exports.moveElementToEnd = moveElementToEnd;
+// Test Cases Set Up
+let array = [4, 7, 8, 22, 4, 5, 4, 9, 0, 6, 18];
+console.log(moveElementToEnd(array, 4)); // [7, 8, 22, 5, 9, 0, 6, 18, 4, 4, 4]
