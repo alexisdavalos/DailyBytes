@@ -13,6 +13,7 @@
 - [BinarySearch](BinarySearch)
 - [BinaryTreeInversion](BinaryTreeInversion)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
+- [BinaryTreeToLinkedList](BinaryTreeToLinkedList)
 - [BreadthFirstSearch](BreadthFirstSearch)
 - [BubbleSort](BubbleSort)
 - [CompareTwoArrays](CompareTwoArrays)
