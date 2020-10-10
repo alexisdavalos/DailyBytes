@@ -11,6 +11,7 @@
 - [BST_Traversal](BST_Traversal)
 - [BinarySearch](BinarySearch)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
+- [BinaryTreeToLinkedList](BinaryTreeToLinkedList)
 - [BreadthFirstSearch](BreadthFirstSearch)
 - [BubbleSort](BubbleSort)
 - [CompareTwoArrays](CompareTwoArrays)
