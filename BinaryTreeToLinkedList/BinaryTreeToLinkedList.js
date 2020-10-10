@@ -6,7 +6,7 @@ class Tree {
     this.right = null;
   }
 }
-// O(n + m) time | O(n + m)
+
 const convertToLinkedList = (root) => {
   // Your Code Here
 };
