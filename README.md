@@ -1,6 +1,7 @@
 # Coding Challenges (Python and JS)
 
-- This is a collection of coding challenges I've come across w/ comments and complexity analysis (not in all problems)
+- This repository focuses on algorithmic and data structure based coding problems
+- The problem files come w/ comments and complexity analysis but some may still lack those
 - Some problems only have python solutions and some only have javascript solutions
 - Feel free to make a pull request if you have better/different solutions
 - The answers can be found in the [solutions](https://github.com/alexisdavalos/CodingChallenges/tree/solutions) branch
