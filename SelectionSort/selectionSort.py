@@ -1,7 +1,7 @@
 # Write a function that sorts an array by implementing a selection sort algorithm
 def selectionSort(array):
     # Your Code Here
-    return array
+    return
 
 
 # Driver Code
