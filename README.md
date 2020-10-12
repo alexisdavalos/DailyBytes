@@ -10,6 +10,7 @@
 - [Balanced Brackets](BalancedBrackets)
 - [BST_Traversal](BST_Traversal)
 - [BinarySearch](BinarySearch)
+- [BinaryTreeComparison](BinaryTreeComparison)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
 - [BinaryTreeToLinkedList](BinaryTreeToLinkedList)
 - [BreadthFirstSearch](BreadthFirstSearch)
