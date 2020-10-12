@@ -15,6 +15,7 @@
 - [BinaryTreeComparison](BinaryTreeComparison)
 - [BinaryTreeInversion](BinaryTreeInversion)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
+- [BinaryTreeMode](BinaryTreeMode)
 - [BinaryTreeToLinkedList](BinaryTreeToLinkedList)
 - [BreadthFirstSearch](BreadthFirstSearch)
 - [BubbleSort](BubbleSort)
