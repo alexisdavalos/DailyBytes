@@ -1,8 +1,10 @@
 # Coding Challenges (Python and JS)
 
-- This is a collection of coding challenges I've come across w/ comments and complexity analysis (not in all problems)
+- This repository focuses on algorithmic and data structure based coding problems
+- The problem files come w/ comments and complexity analysis but some may still lack those
 - Some problems only have python solutions and some only have javascript solutions
 - Feel free to make a pull request if you have better/different solutions
+- The answers can be found in the [solutions](https://github.com/alexisdavalos/CodingChallenges/tree/solutions) branch
 
 # Current List of Coding Challenges:
 
@@ -11,7 +13,9 @@
 - [BST_Traversal](BST_Traversal)
 - [BinarySearch](BinarySearch)
 - [BinaryTreeComparison](BinaryTreeComparison)
+- [BinaryTreeInversion](BinaryTreeInversion)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
+- [BinaryTreeMode](BinaryTreeMode)
 - [BinaryTreeToLinkedList](BinaryTreeToLinkedList)
 - [BreadthFirstSearch](BreadthFirstSearch)
 - [BubbleSort](BubbleSort)
@@ -22,12 +26,14 @@
 - [CycleIterator](CycleIterator)
 - [Debounce](Debounce)
 - [DepthFirstSearch](DepthFirstSearch)
-- [DoublyLinkedList](DoublyLinkedList)
 - [Fibonacci](Fibonacci)
 - [FindFactorial](FindFactorial)
-- [HOC_HOF](HOC_HOF)
+- [HigherOrderFunction](HigherOrderFunction)
 - [InsertionSort](InsertionSort)
 - [JewelsStones](JewelsStones)
+- [LinkedListCycle](LinkedListCycles)
+- [LinkedListMerge](LinkedListMerge)
+- [LinkedListMiddleNode](LinkedListMiddleNode)
 - [Majority](Majority)
 - [MakeHistory](MakeHistory)
 - [MoveElementToEnd](MoveElementToEnd)
@@ -35,6 +41,8 @@
 - [NestedObjects](NestedObjects)
 - [NumIntersection](NumIntersection)
 - [Palindromes](Palindromes)
+- [RemoveLinkedListValues](RemoveLinkedListValues)
+- [ReverseLinkedList](ReverseLinkedList)
 - [ReverseString](ReverseString)
 - [ReverseSpecialString](ReverseSpecialString)
 - [RobotVaccum](RobotVaccum)
@@ -48,4 +56,3 @@
 - [TwoNumberSum](TwoNumberSum)
 - [UniqueChar](UniqueChar)
 - [ValidAnagram](ValidAnagram)
-- [ValidateSubsequence](ValidateSubsequence)
