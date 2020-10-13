@@ -14,24 +14,24 @@ const invertBinaryTree = (tree) => {
   // Loop while queue has nodes
   while (queue.length > 0) {
     // Grab node off the queue
-    let cur = queue.pop();
+    let treeNode = queue.pop();
     // Swap children nodes if node is not null
-    if (cur !== null) {
-      swapTreeNodes(cur);
+    if (treeNode !== null) {
+      swapChildren(treeNode);
     } else {
       // Node is null, continue to next node in queue
       continue;
     }
     // Add swapped children to the queue
-    queue.unshift(cur.left);
-    queue.unshift(cur.right);
+    queue.unshift(treeNode.left);
+    queue.unshift(treeNode.right);
   }
 
   return tree;
 };
 
 // Swaps left and right node children
-const swapTreeNodes = (node) => {
+const swapChildren = (node) => {
   const left = node.left;
   node.left = node.right;
   node.right = left;
@@ -47,15 +47,13 @@ class Tree {
 }
 
 // Tree Construction
-const tree = new Tree(1);
+const tree = new Tree(4);
 tree.left = new Tree(2);
-tree.right = new Tree(3);
-tree.left.left = new Tree(4);
-tree.left.right = new Tree(5);
-tree.left.left.left = new Tree(8);
-tree.left.left.right = new Tree(9);
-tree.right.left = new Tree(6);
-tree.right.right = new Tree(7);
+tree.right = new Tree(6);
+tree.left.left = new Tree(1);
+tree.left.right = new Tree(3);
+tree.left.left.left = new Tree(5);
+tree.left.left.right = new Tree(7);
 
 console.log("original:", tree);
 console.log("\ninverted:", invertBinaryTree(tree));
