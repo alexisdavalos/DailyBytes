@@ -7,8 +7,6 @@ class Tree:
         self.left = None
         self.right = None
   
-
-
 def binaryTreeMaxLevelValues(root):
   # Your Code Here
   return 
