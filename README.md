@@ -14,6 +14,7 @@
 - [BinarySearch](BinarySearch)
 - [BinaryTreeComparison](BinaryTreeComparison)
 - [BinaryTreeInversion](BinaryTreeInversion)
+- [BinaryTreeLeafPaths](BinaryTreeLeafPaths)
 - [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal)
 - [BinaryTreeMode](BinaryTreeMode)
 - [BinaryTreeToLinkedList](BinaryTreeToLinkedList)
