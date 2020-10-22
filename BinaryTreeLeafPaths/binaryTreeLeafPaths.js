@@ -12,15 +12,27 @@ class Tree {
 const rootToLeafPaths = (root) => {
 	// Return null if empty tree
 	if (root === null) return null;
+
+	// Global Variable Initialization
 	let path = "";
+	let symbols = [];
 	let paths = [];
+
+	// Traverse input tree and builds path
 	traverseTree(root, path);
+	// Return populated paths array
 	return paths;
+
+	// Helper - recursive traversal function
 	function traverseTree(tree, path) {
+		// Starts building path at root O(n + n) time | O(n + n) space
 		path += `${tree.val}->`;
+		// Traverse left side first and pass path down - pushes nodes onto recursion stack O(n)
 		if (tree.left) traverseTree(tree.left, path);
+		// Traverse right side last and pass path down - pushes nodes onto recursion stack O(n)
 		if (tree.right) traverseTree(tree.right, path);
-		if (tree.left === null && tree.right === null) {
+		// When you reach a leaf node, clean arrow from end of path
+		if (!tree.left && !tree.right) {
 			let finalPath = path.split("");
 			// removes arrow from final node
 			finalPath.splice(finalPath.length - 2, 2);
