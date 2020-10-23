@@ -15,7 +15,6 @@ const rootToLeafPaths = (root) => {
 
 	// Global Variable Initialization
 	let path = "";
-	let symbols = [];
 	let paths = [];
 
 	// Traverse input tree and builds path
