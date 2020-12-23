@@ -1,5 +1,5 @@
-# Coding Challenges (Python and JS)
-
+# Daily Bytes (Python and JS)
+- Remember a byte a day keeps you employed! 
 - This repository focuses on algorithmic and data structure based coding problems
 - The problem files come w/ comments and complexity analysis but some may still lack those
 - Some problems only have python solutions and some only have javascript solutions
